@@ -1,0 +1,33 @@
+{
+    "name": "guikprod/gcp-components",
+    "description": "The source code of the library which provide an integration of GCP components in different projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Loulier Guillaume",
+            "email": "guillaume.loulier@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "google/cloud-pubsub": "^1.4",
+        "google/cloud-storage": "^1.6",
+        "google/cloud-translate": "^1.2",
+        "google/cloud-vision": "^0.15",
+        "grpc/grpc": "^1.12",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "GuikProd\\GCP\\": "src/",
+            "GuikProd\\Bridge\\": "src/Bridge/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GuikProd\\GCP\\Tests\\": "tests/"
+        }
+    }
+}
